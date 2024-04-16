@@ -49,7 +49,7 @@
     <!-- header start -->
     <header class="py-10">
       <!-- navbar start -->
-      <nav class="container mx-auto flex justify-between items-center gap-6">
+      <nav class="container px-3 mx-auto flex justify-between items-center gap-6">
         <!-- nav logo -->
         <a
           href="./"
@@ -57,7 +57,7 @@
           Jhatri
         </a>
         <!-- nav menu -->
-        <ul class="flex items-center gap-3 text-lg font-raleway">
+        <ul class="hidden md:flex items-center gap-3 text-lg font-raleway">
           <li>
             <a
               class="block px-3 py-1.5 rounded-md transition hover:bg-green-200 border border-transparent hover:border-green-400"
@@ -101,70 +101,70 @@
     <!-- main content start -->
     <main class="space-y-20">
       <!-- hero start -->
-      <section class="container mx-auto">
-        <div class="relative aspect-[16/8] flex items-center justify-center">
+      <section class="container px-3 mx-auto">
+        <div class="relative px-10 py-20 md:py-28 flex items-center justify-center">
           <img
             src="./images/banner.png"
             alt="banner"
             class="block w-full h-full rounded-[32px] absolute object-cover object-center inset-0 -z-10" />
-          <div class="flex flex-col items-center justify-center gap-8 max-w-[780px]">
-            <h2 class="flex flex-col text-center text-[64px] font-extrabold">
+          <div class="flex flex-col items-center justify-center gap-8 max-w-[820px]">
+            <h2 class="flex flex-col text-center text-3xl md:text-5xl font-extrabold">
               <span class="text-white">End-to-End Travel with</span>
               <span class="text-brand">Jhatri Paribahan</span>
             </h2>
-            <p class="text-white text-center text-lg px-8 text-inter">
-              Yes, you can run unit tests and view the results directly within the app. The
-              integrated testing features allow for a streamlined .
+            <p class="text-white text-center md:text-lg px-8 text-inter">
+              Book your bus tickets hassle-free with Jhatri Ticket. Discover seamless travel
+              experiences and great deals to your favorite destinations.
             </p>
             <button
-              class="bg-brand rounded-md px-6 py-4 font-bold"
+              class="bg-brand rounded-md px-6 py-3 md:py-4 font-bold"
               onclick="goToTicketingSection()">
               Buy Ticket
             </button>
           </div>
         </div>
-        <div class="w-4/5 mx-auto grid grid-cols-3 gap-8 -mt-16 z-10">
+        <div class="w-full px-3 md:w-4/5 mx-auto grid grid-cols-3 gap-4 md:gap-8 -mt-16 z-10">
           <!-- info card start -->
           <div
-            class="flex gap-6 items-center px-8 py-6 rounded-2xl border-0 border-b-4 border-brand h-32 bg-white">
-            <span class="text-brand block"
-              ><i
+            class="flex flex-col md:flex-row gap-6 items-center px-3 md:px-8 py-6 rounded-2xl border-0 border-b-4 border-brand h-auto md:h-32 bg-white">
+            <span class="text-brand block">
+              <i
                 data-lucide="users"
-                class="w-16 h-16"></i
-            ></span>
-            <div class="space-y-2">
-              <h3 class="text-4xl font-bold font-inter">500K+</h3>
-              <p class="text-lg text-neutral-600">Registered users</p>
+                class="w-12 h-12 md:w-16 md:h-16"></i>
+            </span>
+            <div class="space-y-2 text-center md:text-start">
+              <h3 class="text-xl md:text-4xl font-bold font-inter">500K+</h3>
+              <p class="text-sm md:text-lg text-neutral-600">Registered users</p>
             </div>
           </div>
           <!-- info card end -->
 
           <!-- info card start -->
           <div
-            class="flex gap-6 items-center px-8 py-6 rounded-2xl border-0 border-b-4 border-brand h-32 bg-white">
+            class="flex flex-col md:flex-row gap-6 items-center px-3 md:px-8 py-6 rounded-2xl border-0 border-b-4 border-brand h-auto md:h-32 bg-white">
             <span class="text-brand block">
               <i
                 data-lucide="ticket"
-                class="w-16 h-16"></i>
+                class="w-12 h-12 md:w-16 md:h-16"></i>
             </span>
-            <div class="space-y-2">
-              <h3 class="text-4xl font-bold font-inter">1.7 lacks</h3>
-              <p class="text-lg text-neutral-600">Tickets sold</p>
+            <div class="space-y-2 text-center md:text-start">
+              <h3 class="text-xl md:text-4xl font-bold font-inter">1.7 lacks</h3>
+              <p class="text-sm md:text-lg text-neutral-600">Tickets sold</p>
             </div>
           </div>
           <!-- info card end -->
 
           <!-- info card start -->
           <div
-            class="flex gap-6 items-center px-8 py-6 rounded-2xl border-0 border-b-4 border-brand h-32 bg-white">
+            class="flex flex-col md:flex-row gap-6 items-center px-3 md:px-8 py-6 rounded-2xl border-0 border-b-4 border-brand h-auto md:h-32 bg-white">
             <span class="text-brand block">
               <i
                 data-lucide="bus"
-                class="w-16 h-16"></i>
+                class="w-12 h-12 md:w-16 md:h-16"></i>
             </span>
-            <div class="space-y-2">
-              <h3 class="text-4xl font-bold font-inter">80K+</h3>
-              <p class="text-lg text-neutral-600">Rental partners</p>
+            <div class="space-y-2 text-center md:text-start">
+              <h3 class="text-xl md:text-4xl font-bold font-inter">80K+</h3>
+              <p class="text-sm md:text-lg text-neutral-600">Rental partners</p>
             </div>
           </div>
           <!-- info card end -->
@@ -173,31 +173,31 @@
       <!-- hero end -->
 
       <!-- offer section start -->
-      <section class="container mx-auto space-y-12">
-        <h2 class="font-bold text-[40px] text-center">Best offers for you</h2>
-        <div class="grid grid-cols-2 gap-8">
+      <section class="container px-2 mx-auto space-y-12">
+        <h2 class="font-bold text-3xl md:text-[40px] text-center">Best offers for you</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="bg-[#FFBF0F] relative rounded-3xl flex">
             <div
-              class="w-7/12 flex flex-col justify-center p-[52px] relative border-r-2 border-dashed border-white after:absolute after:w-10 after:h-10 after:bg-white after:bottom-0 after:right-0 after:rounded-full after:translate-y-1/2 after:translate-x-1/2 before:absolute before:w-10 before:h-10 before:bg-white before:top-0 before:right-0 before:rounded-full before:-translate-y-1/2 before:translate-x-1/2">
-              <h3 class="font-black text-3xl font-inter">15% OFF</h3>
-              <p class="font-semibold text-lg">on your next purchase</p>
-              <p class="font-medium text-primary/50">use by January 2024</p>
+              class="w-7/12 flex flex-col justify-center p-8 md:p-[52px] relative border-r-2 border-dashed border-white after:absolute after:w-10 after:h-10 after:bg-white after:bottom-0 after:right-0 after:rounded-full after:translate-y-1/2 after:translate-x-1/2 before:absolute before:w-10 before:h-10 before:bg-white before:top-0 before:right-0 before:rounded-full before:-translate-y-1/2 before:translate-x-1/2">
+              <h3 class="font-black text-2xl md:text-3xl font-inter">15% OFF</h3>
+              <p class="font-semibold md:text-lg">on your next purchase</p>
+              <p class="font-medium text-sm md:text-base text-primary/50">use by January 2024</p>
             </div>
             <div class="w-5/12 p-[52px] text-center flex items-center justify-center flex-col">
-              <h3 class="font-bold text-[32px] font-raleway">NEW15</h3>
-              <p class="font-medium text-primary/50 text-lg font-raleway">Coupon Code</p>
+              <h3 class="font-bold text-2xl md:text-[32px] font-raleway">NEW15</h3>
+              <p class="font-medium text-primary/50 text-sm md:text-lg font-raleway">Coupon Code</p>
             </div>
           </div>
           <div class="bg-[#F78C9C] relative rounded-3xl flex">
             <div
-              class="w-7/12 flex flex-col justify-center p-[52px] relative border-r-2 border-dashed border-white after:absolute after:w-10 after:h-10 after:bg-white after:bottom-0 after:right-0 after:rounded-full after:translate-y-1/2 after:translate-x-1/2 before:absolute before:w-10 before:h-10 before:bg-white before:top-0 before:right-0 before:rounded-full before:-translate-y-1/2 before:translate-x-1/2">
-              <h3 class="font-black text-3xl font-inter">20% OFF</h3>
-              <p class="font-semibold text-lg">on your next purchase</p>
-              <p class="font-medium text-primary/50">use by January 2024</p>
+              class="w-7/12 flex flex-col justify-center p-8 md:p-[52px] relative border-r-2 border-dashed border-white after:absolute after:w-10 after:h-10 after:bg-white after:bottom-0 after:right-0 after:rounded-full after:translate-y-1/2 after:translate-x-1/2 before:absolute before:w-10 before:h-10 before:bg-white before:top-0 before:right-0 before:rounded-full before:-translate-y-1/2 before:translate-x-1/2">
+              <h3 class="font-black text-2xl md:text-3xl font-inter">20% OFF</h3>
+              <p class="font-semibold md:text-lg">on your next purchase</p>
+              <p class="font-medium text-sm md:text-base text-primary/50">use by January 2024</p>
             </div>
             <div class="w-5/12 p-[30px] text-center flex items-center justify-center flex-col">
-              <h3 class="font-bold text-[32px] font-raleway">Couple 20</h3>
-              <p class="font-medium text-primary/50 text-lg font-raleway">Coupon Code</p>
+              <h3 class="font-bold text-2xl md:text-[32px] font-raleway">Couple 20</h3>
+              <p class="font-medium text-primary/50 text-sm md:text-lg font-raleway">Coupon Code</p>
             </div>
           </div>
         </div>
@@ -214,27 +214,29 @@
       <section
         class="rounded-t-[88px] border-t-2 border-brand py-28 bg-[#F7F8F8]"
         id="ticketing-section">
-        <div class="container mx-auto space-y-6">
+        <div class="container px-3 mx-auto space-y-6">
           <!-- section heading -->
-          <div class="mx-auto max-w-3xl w-full text-center space-y-3 mb-10">
-            <h3 class="font-bold text-[40px]">Jhatri Paribahan</h3>
-            <p class="text-lg text-primary/60">
-              Yes, you can run unit tests and view the results directly within the app. The
-              integrated testing features allow for a streamlined .
+          <div class="mx-auto max-w-3xl w-full text-center space-y-3 mb-10 px-6">
+            <h3 class="font-bold text-3xl md:text-[40px]">Jhatri Paribahan</h3>
+            <p class="text-sm md:text-lg text-primary/60">
+              Secure your seats, choose your preferred routes, and embark on a hassle-free journey
+              with Jhatri Ticket. With user-friendly features and flexible options, booking your bus
+              tickets has never been easier.
             </p>
           </div>
 
           <!-- ticket information -->
-          <div class="bg-white rounded-3xl flex items-stretch gap-10 overflow-hidden">
+          <div
+            class="bg-white rounded-3xl flex flex-col md:flex-row items-stretch gap-10 overflow-hidden">
             <div class="grow p-8 space-y-8">
               <!-- heading -->
-              <div class="flex justify-between items-center">
+              <div class="flex flex-col md:flex-row gap-3 justify-between items-center">
                 <div class="flex items-center gap-3">
                   <i
                     data-lucide="bus"
                     class="w-20 h-20"></i>
                   <div>
-                    <h3 class="font-bold text-[32px]">Greenline Poribahan</h3>
+                    <h3 class="font-bold text-lg md:text-[32px]">Greenline Poribahan</h3>
                     <p class="text-lg text-primary/60">Coach-009-WEB ! AC_Business</p>
                   </div>
                 </div>
@@ -254,15 +256,15 @@
                   <p>Departure Time</p>
                   <p>9:00 PM</p>
                 </div>
-                <ul class="flex gap-4 items-center">
+                <ul class="flex max-sm:flex-col max-sm:items-stretch gap-4 items-center">
                   <li class="flex-1 px-4 py-5 rounded-xl text-center bg-[#030712]/5">
                     Boarding Point - Laxmipur
                   </li>
                   <li class="flex-1 px-4 py-5 rounded-xl text-center bg-[#030712]/5">
-                    Boarding Point - Laxmipur
+                    Dropping Point - Bogura
                   </li>
                   <li class="flex-1 px-4 py-5 rounded-xl text-center bg-[#030712]/5">
-                    Boarding Point - Laxmipur
+                    Est. Time - 11 Hour
                   </li>
                 </ul>
               </div>
@@ -271,31 +273,32 @@
             <!-- divider -->
             <div class="relative">
               <span
-                class="w-20 h-20 absolute rounded-full bg-[#F7F8F8] top-0 left-1/2 -translate-y-1/2 -translate-x-1/2"></span>
+                class="w-20 h-20 max-sm:w-16 max-sm:h-16 absolute rounded-full bg-[#F7F8F8] top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 max-sm:top-1/2 max-sm:left-0"></span>
               <span
-                class="w-20 h-20 absolute rounded-full bg-[#F7F8F8] bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2"></span>
-              <span class="absolute inset-y-14 border border-dashed w-0 border-brand"></span>
+                class="w-20 h-20 max-sm:w-16 max-sm:h-16 absolute rounded-full bg-[#F7F8F8] md:bottom-0 md:left-1/2 translate-y-1/2 -translate-x-1/2 max-sm:right-0 max-sm:top-1/2 max-sm:translate-x-1/2 max-sm:-translate-y-1/2"></span>
+              <span
+                class="absolute max-sm:inset-x-12 max-sm:h-0 md:inset-y-14 border border-dashed md:w-0 border-brand"></span>
             </div>
 
             <!-- single ticket price -->
-            <div class="grow flex items-center justify-center flex-col pr-6">
+            <div class="grow flex items-center justify-center flex-col md:pr-6 max-sm:pb-8">
               <div class="text-center flex flex-col items-center justify-center">
                 <img
                   src="./images/fare.png"
                   alt="currency"
                   class="w-12 h-12 block object-contain object-center" />
-                <h4 class="font-bold text-[32px]">550 Taka</h4>
-                <p class="text-2xl text-primary/60">Per Seat</p>
+                <h4 class="font-bold max-sm:text-2xl md:text-[32px]">550 Taka</h4>
+                <p class="text-lg md:text-2xl text-primary/60">Per Seat</p>
               </div>
             </div>
           </div>
 
           <!-- ticket section -->
           <div class="bg-white rounded-xl p-8">
-            <div class="grid grid-cols-12 gap-12">
+            <div class="grid md:grid-cols-12 gap-12">
               <!-- seat selection -->
               <div
-                class="col-span-7 relative space-y-5 before:absolute before:-right-6 before:-translate-x-1/2 before:w-0 before:inset-y-0 before:border before:border-dashed">
+                class="md:col-span-7 relative space-y-5 before:absolute before:-right-6 before:-translate-x-1/2 before:w-0 before:inset-y-0 before:border before:border-dashed">
                 <!-- heading -->
                 <div class="space-y-4">
                   <h4 class="pb-5 border-b-2 border-dashed font-semibold text-2xl">
@@ -563,11 +566,11 @@
               </div>
               <!-- right side content -->
               <div
-                class="col-span-5 space-y-5"
+                class="md:col-span-5 space-y-5"
                 id="order-details-block">
                 <!-- heading -->
                 <h4 class="pb-5 border-b-2 border-dashed font-semibold text-2xl">
-                  Select Your Seat
+                  Order Information
                 </h4>
                 <!-- order details -->
                 <div class="bg-[#F7F8F8] p-8 rounded-xl space-y-4">
@@ -729,22 +732,24 @@
 
     <!-- footer content start -->
     <footer class="bg-primary py-[120px]">
-      <div class="container mx-auto space-y-8">
-        <div class="flex justify-between pb-8 border-b border-dashed border-white/50">
-          <div class="space-y-2 max-w-sm">
+      <div class="container px-3 mx-auto space-y-8">
+        <div
+          class="flex max-sm:flex-col max-sm:text-center gap-4 justify-between pb-8 border-b border-dashed border-white/50">
+          <div class="space-y-2 max-w-sm max-sm:mx-auto">
             <h3 class="text-white font-extrabold text-4xl">Jhatri Poribahan</h3>
             <p class="text-white/60 text-lg">
               P-Ticket is a digital platform to make your daily commuting better.
             </p>
           </div>
-          <div class="text-end space-y-2">
+          <div class="text-end max-sm:text-center space-y-2">
             <h4 class="text-white text-xl font-semibold">Download our app</h4>
             <img
               src="./images/app.svg"
-              alt="" />
+              alt=""
+              class="max-sm:block max-sm:mx-auto" />
           </div>
         </div>
-        <div class="flex items-center justify-between">
+        <div class="flex max-sm:flex-col max-sm:gap-3 items-center justify-between">
           <p class="text-white/60">@all rights reserved, Jhatri Ticket services limited.2024</p>
           <ul class="flex gap-4 items-center *:text-white">
             <li>
