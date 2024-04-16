@@ -1,3 +1,7 @@
+const seatElements = document.querySelectorAll('.ticket-btn')
+const couponForm = document.getElementById('coupon-form')
+const customerInfoForm = document.getElementById('customer-info-form')
+
 const coupons = [
   {
     value: 'NEW15',
@@ -33,7 +37,6 @@ const orderDetails = {
   },
 }
 
-const seatElements = document.querySelectorAll('.ticket-btn')
 seatElements.forEach((seatElement) => {
   seatElement.addEventListener('click', (e) => {
     if (e.target.id) {
@@ -153,6 +156,8 @@ const resetOrder = () => {
   updateSeatUi()
 
   orderConfirmation.classList.add('hidden')
+  customerInfoForm.reset()
+  couponForm.reset()
 }
 
 const onCustomerFormSubmit = (e) => {
@@ -164,10 +169,8 @@ const onCustomerFormSubmit = (e) => {
   orderContinue.addEventListener('click', resetOrder)
 }
 
-const couponForm = document.getElementById('coupon-form')
 couponForm.addEventListener('submit', onCouponSubmit)
 
-const customerInfoForm = document.getElementById('customer-info-form')
 customerInfoForm.addEventListener('change', onCustomerFormUpdate)
 customerInfoForm.addEventListener('submit', onCustomerFormSubmit)
 
